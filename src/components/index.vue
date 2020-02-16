@@ -1,7 +1,15 @@
 <template>
   <div id="index">
     <main>
-      <div class="top"></div>
+      <div class="top">
+        <h1>Portfilio</h1>
+        <div
+          class="top__button"
+          v-scroll-to="{ el: '.profile', duration: 1500 }"
+        >
+          Who's ME?
+        </div>
+      </div>
     </main>
     <div class="container">
       <nav>
@@ -11,6 +19,17 @@
           <li v-scroll-to="{ el: '.works', duration: 1500 }">Works</li>
           <li v-scroll-to="{ el: '.contact', duration: 1500 }">Contact</li>
         </ul>
+        <div class="navlink">
+          <a
+            class="navgithub"
+            href="https://github.com/tkymr827"
+            target="_blank"
+            ><font-awesome-icon :icon="['fab', 'github']"
+          /></a>
+          <a class="navtwitter" href="https://twitter.com/ijafiwpwa"
+            ><font-awesome-icon :icon="['fab', 'twitter']"
+          /></a>
+        </div>
       </nav>
       <div class="content">
         <div class="profile">
@@ -29,13 +48,13 @@
                   <a href="https://github.com/tkymr827" target="_blank"
                     ><font-awesome-icon :icon="['fab', 'github']" />Github</a
                   >
+                  <a href="https://twitter.com/ijafiwpwa"
+                    ><font-awesome-icon :icon="['fab', 'twitter']" />Twitter</a
+                  >
                 </li>
                 <li>
-                  自己PR: Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Dicta vitae corporis neque aspernatur nam vel adipisci
-                  illo cupiditate voluptas dolorem quaerat, assumenda
-                  doloremque? Ipsa, iusto mollitia quia labore doloremque
-                  obcaecati!
+                  今後してみたいこと：今勉強しているフロントエンドの言語をもっと深く理解し、自信を持って得意と言えるような言語を習得したい。
+                  将来的にはAIの分野にも手を出してみたい。
                 </li>
               </ul>
             </div>
@@ -158,12 +177,32 @@
   font-family: "Basic", sans-serif;
 
   background: #f9e4b7;
-  width: 100%;
+
   //   background: red;
   main {
     .top {
-      background: url("../assets/topimg.jpg") center center / cover no-repeat;
+      background: url("../assets/topimg2.jpg") center center / cover no-repeat;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &__button {
+        cursor: pointer;
+        background: #2f92ab;
+        color: #fff;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        margin: 4rem;
+      }
+      h1 {
+        font-size: 12rem;
+        color: #fff;
+        letter-spacing: 0.7rem;
+        @media screen and(max-width:480px) {
+          font-size: 8rem;
+        }
+      }
     }
   }
   .container {
@@ -195,6 +234,20 @@
       @media screen and (max-width: 480px) {
         display: none;
       }
+      .navlink {
+        text-align: center;
+        a {
+          text-decoration: none;
+          font-size: 4rem;
+          margin: 0 2rem;
+        }
+        .navgithub {
+          color: #171515;
+        }
+        .navtwitter {
+          color: #00acee;
+        }
+      }
     }
     .content {
       margin: 0 5rem;
@@ -208,6 +261,9 @@
         position: relative;
         letter-spacing: 0.4rem;
         font-size: 4rem;
+        @media screen and (max-width: 480px) {
+          font-size: 2rem;
+        }
         &::before {
           content: "";
           position: absolute;
@@ -239,8 +295,8 @@
           &--thumbnail {
             width: 50%;
             img {
-              height: 20rem;
-              width: 20rem;
+              height: 25rem;
+              width: 25rem;
               border-radius: 50%;
               object-fit: cover;
             }
@@ -255,6 +311,9 @@
                 margin-top: 2rem;
                 text-align: left;
                 font-size: 2rem;
+                a {
+                  margin: 1rem;
+                }
               }
             }
           }
@@ -394,7 +453,10 @@
           font-size: 2rem;
         }
         p {
-          font-size: 2rem;
+          font-size: 1.7rem;
+          @media screen and(max-width:480px) {
+            // font-size: 1.8rem;
+          }
         }
       }
     }
@@ -422,6 +484,9 @@
             border-bottom: 0.1rem solid #fff;
             margin-bottom: -0.1rem;
             opacity: 1;
+          }
+          @media screen and (max-width: 480px) {
+            margin: 0 2rem;
           }
         }
       }
