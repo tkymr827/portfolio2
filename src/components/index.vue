@@ -284,6 +284,9 @@
         text-align: center;
         height: 100vh;
         margin: 3rem 0;
+        @media screen and (max-width: 480px) {
+          height: 150vh;
+        }
       }
       .profile {
         &__section {
