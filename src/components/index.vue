@@ -377,7 +377,8 @@
                 .VueCarousel-slide {
                   background: #feffe6;
                   //   margin-right: 0.2rem;
-                  height: 60rem;
+                  //   height: 60rem;
+                  height: 70vh;
                   .slidecontent {
                     display: flex;
                     align-items: center;
@@ -505,14 +506,6 @@
 export default {
   data() {
     return {
-      //   slides: [
-      //     require("../assets/relaxsounds.png"),
-      //     require("../assets/weathernow.png"),
-      //     require("../assets/numgame.png"),
-      //     require("../assets/untilgraduation.png"),
-      //     require("../assets/traindelaystatus.png"),
-      //     require("../assets/searchfortwitterpicture.png")
-      //   ]
       slides: [
         {
           image: require("../assets/relaxsounds.png"),
