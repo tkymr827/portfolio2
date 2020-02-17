@@ -279,8 +279,7 @@
       }
       .profile,
       .skill,
-      .works,
-      .contact {
+      .works {
         text-align: center;
         height: 100vh;
         margin: 3rem 0;
@@ -289,7 +288,12 @@
         }
       }
       .contact {
+        text-align: center;
         height: 40vh;
+        margin: 3rem 0;
+        @media screen and (max-width: 480px) {
+          height: 150vh;
+        }
       }
       .profile {
         &__section {
@@ -406,6 +410,9 @@
                     h2 {
                       font-family: "Oswald", sans-serif;
                       font-size: 3rem;
+                      @media screen {
+                        font-size: 2rem;
+                      }
                     }
 
                     p,
