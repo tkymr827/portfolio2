@@ -106,6 +106,7 @@
               :navigation-enabled="true"
               navigation-prev-label="<span style='font-size:30px'>◀︎</span>"
               navigation-next-label="<span style='font-size:30px'>▶︎</span>"
+              paginationPosition="bottom-overlay"
               :speed="2000"
               :loop="true"
               :perPage="2"
@@ -284,7 +285,7 @@
         height: 100vh;
         margin: 3rem 0;
         @media screen and (max-width: 480px) {
-          height: 130vh;
+          height: 140vh;
         }
       }
       .contact {
