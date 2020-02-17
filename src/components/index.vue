@@ -284,7 +284,7 @@
         height: 100vh;
         margin: 3rem 0;
         @media screen and (max-width: 480px) {
-          height: 150vh;
+          height: 130vh;
         }
       }
       .contact {
@@ -292,7 +292,7 @@
         height: 40vh;
         margin: 3rem 0;
         @media screen and (max-width: 480px) {
-          height: 150vh;
+          //   height: 150vh;
         }
       }
       .profile {
