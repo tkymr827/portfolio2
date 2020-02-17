@@ -377,7 +377,7 @@
                 .VueCarousel-slide {
                   background: #feffe6;
                   //   margin-right: 0.2rem;
-                  height: 50rem;
+                  height: 60rem;
                   .slidecontent {
                     display: flex;
                     align-items: center;
