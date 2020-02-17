@@ -288,6 +288,9 @@
           height: 150vh;
         }
       }
+      .contact {
+        height: 40vh;
+      }
       .profile {
         &__section {
           display: flex;
@@ -303,6 +306,9 @@
               border-radius: 50%;
               object-fit: cover;
               transform: rotate(90deg);
+              @media screen and (max-width: 480px) {
+                transform: rotate(0deg);
+              }
             }
           }
           &--text {
