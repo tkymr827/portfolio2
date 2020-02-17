@@ -391,6 +391,9 @@
                   //   margin-right: 0.2rem;
                   //   height: 60rem;
                   height: 75vh;
+                  @media screen and (max-width: 480px) {
+                    height: 85vh;
+                  }
                   .slidecontent {
                     display: flex;
                     align-items: center;
