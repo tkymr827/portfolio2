@@ -36,7 +36,7 @@
           <h1 class="title"><font-awesome-icon icon="user" /> Profile</h1>
           <div class="profile__section">
             <div class="profile__section--thumbnail">
-              <img src="../assets/profile.jpg" alt="profile" />
+              <img src="../assets/IMG_0627.jpg" alt="profile" />
             </div>
             <div class="profile__section--text">
               <ul>
@@ -302,6 +302,7 @@
               width: 25rem;
               border-radius: 50%;
               object-fit: cover;
+              transform: rotate(90deg);
             }
           }
           &--text {
@@ -378,7 +379,7 @@
                   background: #feffe6;
                   //   margin-right: 0.2rem;
                   //   height: 60rem;
-                  height: 70vh;
+                  height: 75vh;
                   .slidecontent {
                     display: flex;
                     align-items: center;
