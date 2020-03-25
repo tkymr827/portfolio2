@@ -576,6 +576,20 @@ export default {
             "Twitterの画像検索ができるサイトです。\nLaravelでTWitterAPIを使用し画像を取得、取得した画像をVueに渡して表示する弁ょうになりました。",
           pp: "１週間ほど",
           link: "https://guarded-castle-18622.herokuapp.com/"
+        },
+        {
+          image: require("../assets/portfolio.png"),
+          title: "Portfolio",
+          text: "今まで作ったものをまとめるために作りました。",
+          pp: "5日ほど"
+        },
+        {
+          image: require("../assets/todolist.png"),
+          title: "TodoList",
+          text: "todoの内容をDBに入れて出し入れしています。",
+          pp: "２日ほど",
+          link: "https://todolist-tkym.herokuapp.com/",
+          github: "https://github.com/tkymr827/todolist-vue-laravel-"
         }
       ]
     };
